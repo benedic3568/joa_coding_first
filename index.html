@@ -7,21 +7,54 @@
     <title>카카오톡</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
   </head>
   <body>
-    <div class="sidebar"></div>
+    <div class="sidebar">
+      <div class="top">
+        <a href="index.html"><i class="fa-solid fa-user"></i></a>
+        <a href="chatting.html"><i class="fa-solid fa-comment"></i></a>
+        <a href="setting.html"><i class="fa-solid fa-ellipsis"></i></a>
+      </div>
+
+      <div class="bottom">
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-gear"></i>
+      </div>
+    </div>
 
     <div class="container">
       <div class="title">
         <h2>friend</h2>
+        <i class="fa-solid fa-user-plus"></i>
       </div>
       <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
         <input type="text" name="" placeholder="이름으로 검색" />
       </div>
-      <div>me</div>
-      <div>me2</div>
-      <div>me3</div>
-      <div>me4</div>
+      <div>
+        <span class="subtitle">내 기본프로필</span>
+        <div class="profile">
+          <img src="images/1.jpg" alt="프로필" />
+          <a href="chat.html"><span>me</span></a>
+        </div>
+        <span class="subtitle">친구</span>
+        <div class="profile">
+          <img src="images/2.jpg" alt="프로필" />
+          <span>me2</span>
+        </div>
+        <div class="profile">
+          <img src="images/3.jpg" alt="프로필" />
+          <span>me3</span>
+        </div>
+        <div class="profile">
+          <img src="images/4.jpg" alt="프로필" />
+          <span>me4</span>
+        </div>
+      </div>
     </div>
   </body>
 </html>

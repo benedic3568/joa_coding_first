@@ -16,6 +16,17 @@ body {
 
 .sidebar {
   background-color: rgb(87, 73, 211);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.top,
+.bottom {
+  color: rgb(141, 141, 141);
+  display: grid;
+  row-gap: 20px;
 }
 
 .container {
@@ -24,11 +35,17 @@ body {
 
 .title {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .title h2 {
-  font-size: 24px;
+  font-size: 18px;
   font: weight 700px;
+}
+
+.title i {
+  color: grey;
 }
 
 .search {
@@ -45,4 +62,102 @@ body {
   border: none;
   outline: none;
   font-size: 12px;
+}
+
+.search i {
+  margin-right: 5px;
+  color: darkgrey;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.profile img,
+.friend img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.profile span {
+  font-weight: bold;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  display: block;
+  font-size: 85%;
+  color: lightgrey;
+  margin-bottom: 10px;
+}
+
+.friend {
+  display: flex;
+  align-items: center;
+  font-size: 90%;
+}
+
+.chattime,
+.chatmessage {
+  color: darkgrey;
+}
+
+.chatprofile {
+  margin-bottom: 5px;
+}
+
+.setting-profile {
+  background-color: lightgrey;
+  border: 1px solid darkgrey;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.setting-account {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid darkgrey;
+  padding-bottom: 20px;
+}
+
+.setting-name {
+  font-weight: bold;
+}
+
+.setting-email {
+  font-size: 85%;
+  color: rgb(114, 114, 114);
+}
+
+.setting-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menus {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 20px;
+}
+
+.menus i {
+  font-size: 200%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }
